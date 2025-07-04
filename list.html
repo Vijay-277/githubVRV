@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+</head>
+<body>
+    <h1>types of list tag
+        ordered list
+        unordered list
+        ul>li*5 it gives extension
+    </h1>
+    <h1>unordered list<br>
+         types="circle","disc","square"</h1>
+    <style>
+        ul{
+            ::marker{
+            color: gold;
+            font-size: 2em;
+        }
+        /* like this we can colur side  */
+        }
+    </style>
+         <ul type="circle">
+        <li>vijay</li>
+        <li>vickram</li>
+        <li>ajith</li>
+        <li>karthi</li>
+        <li>surya</li>
+    </ul>
+     <style>
+        .v{
+            list-style-type:upper-roman;
+        }
+        .v li{
+            color: red;
+        }
+        .v li:nth-child(2){
+            color: blueviolet;
+        }
+    
+        /* like this we can colour each list */
+    </style>
+    <ol class="v">
+        <li>afgs</li>
+        <li>arhtj</li>
+        <li>herst</li>
+    </ol>
+    <ol start="3"reversed>
+        <li>afgs</li>
+        <li>arhtj</li>
+        <li>herst</li>
+    </ol>
+    <h1>ordered list<br>
+        type="A","a","i"</h1>
+    <ol type="A">
+        <li>vijay</li>
+        <li>vickram</li>
+        <li>ajith</li>
+        <li>karthi</li>
+        <li>surya</li>
+    </ol>
+    <hr>
+     <style>
+        .q ::marker{
+            content: ">>";
+        }
+        ul li:hover,ul li:focus{
+            text-decoration: underline;
+        }
+     </style>
+    <ul class="q">
+        <li>e</li>
+        <li>w</li>
+        <li>d</li>
+    </ul>
+    <hr>
+    <h1>marque tag</h1>
+    <h1>behavior="slide","scroll","alternate"<br>
+        direction="right","left","top","down"<br>
+        attributes=bgcolor,width,height,scrolldelay,scrollamount,loop</h1>
+    <marquee bgcolor="red" width="300px" height="200px" behavior="alternate" direction="right" 
+    scrollamount="10px" scrolldelay="100" loop="4">
+        vijay fullstack developer
+    </marquee>
+
+</body>
+</html>

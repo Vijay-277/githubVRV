@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anchor tag</title>
+</head>
+<body>
+ <h1>anchor tag</h1>
+ <h1>target="_blank" used for open in another tab</h1>
+ <a href="demo.html">demo</a><br>
+ <a href="table.html" target="_blank">Table</a><br>
+ <a href="font tag.html" target="box">font</a><hr>
+ <style>
+    a{
+        cursor: pointer;
+        color: black;
+        text-decoration:none;
+    }
+    /* here we are going to make improve so use psudo selector */
+    /* here if we touch and visit it change colur
+    here if we touch and drag it change colur  */
+    a:visited{
+        color: blueviolet;
+    }
+    a:active{
+        color:red;
+    }
+    a:hover,a:focus{
+        color: blue;
+        opacity: 0.5;
+        /* here focus is used to go to next line without using mouse using tab  */
+        /* here opacity is used to blur the content */
+    }
+ </style>
+<h1>iframe tag</h1>
+<!-- go to link copy the embed link and paste -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T8rAtcT0EgI?si=TKcRbCrjdtNJ6W8z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<style>
+    .img{
+        font-weight: 800px;
+        font-size: 10rem;
+        text-align: center;
+        background-image: url(../images.jpg);
+        background-position: bottom;
+        background-size: 100%;
+        -webkit-background-clip:text;
+        color: transparent;
+        /* here webkit is used for set image inside text*/
+        /* background-position is used for set photo top or bootom in text */
+        /* when we want "vijay" quat use <q></q> */
+        /* scroll-behaviour:smooth */
+        /* white-space:nowrap */
+    }
+</style>
+<div class="img">Vijay Developer</div>
+</body>
+</html>
